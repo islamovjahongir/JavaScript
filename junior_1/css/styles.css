@@ -1,0 +1,116 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.yellow {
+    color: blue;
+    font-weight: bold;
+
+}
+
+/* .star_red {
+    color: red;
+}
+
+.star_blue {
+    color: blue;
+} */
+
+.section-item {
+    border: 1px solid black;
+    width: 1000px;
+}
+
+.div-item {
+    text-align: center;
+    display: flex;
+
+    flex-wrap: wrap;
+    /* flex-wrap нужен чтобы управлят шириниой flex элементов */
+
+    /* gap: 15px; */
+    /* gap играет роль отступа */
+
+    /* flex-flow: column-reverse wrap; */
+    /* Шорткат, позволяющий одновременно задать значения 
+    свойствам flex-direction и flex-wrap. */
+
+    flex-direction: row;
+    /*  (значение по умолчанию) — основная ось идёт горизонтально 
+    слева направо, поперечная ось идёт вертикально сверху вниз. */
+
+    /* flex-direction: row-reverse;  */
+    /* обратная row */
+
+    /* flex-direction: column; */
+    /* основная ось поменяет места с поперечной  сверху вниз */
+
+    /* flex-direction: column-reverse; */
+    /* основная ось поменяет места с поперечной  вниз вверх */
+
+    /* align-self: stretch; */
+    /* этот метод позволяет управлят высотой flex элементов */
+
+}
+
+.div-item>div {
+    padding: 10px;
+    /* width: 200px; */
+
+    /* width: calc(33.33%-10px); */
+    
+    flex-grow: 1;
+    /* этот метод позволяет дать автоматическую ширину элемента */
+}
+
+.item-1 {
+    /* flex-shrink: 1; */
+    /* этот метод делает размер элементов на прапорции 
+    1 самая большая, а затем 2,3,4 и остальные */
+
+    /* flex-basis: 200px; */
+    /* Свойство flex-basis указывает на размер элемента 
+    до того, как свободное место будет распределено */
+
+    /* flex: 1; */
+    /* Свойство-шорткат, с помощью которого можно указать значение 
+    трёх свойств одновременно: flex-grow, flex-shrink и flex-basis. */
+    
+    background-color: aqua;
+}
+
+.item-2 {
+    background-color: brown;
+    flex-grow: 2;
+}
+
+.item-3 {
+    background-color: burlywood;
+    flex-grow: 3;
+}
+
+.item-4 {
+    background-color: yellow;
+}
+
+.item-5 {
+    background-color: violet;
+}
+
+.item-6 {
+    background-color: thistle;
+}
+
+.item-7 {
+    background-color: red;
+}
+
+.item-8 {
+    background-color: springgreen;
+}
