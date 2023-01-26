@@ -17,6 +17,16 @@ $('.star').slideDown(2000, function () {
     console.log('Текст показан')
 });
 
+window.setTimeout(function(){
+    console.log("Hello Word")
+}, 5000);
+
+setTimeout(() => {
+    let a = 4;
+    let b = 5;
+    console.log(a+b)
+}, 5000);
+
 // Добавляем класс className для всех элементов с классом .block
 $('.block').addClass('className');
 // Удаляем класс className  у всех элементов с классом .block
