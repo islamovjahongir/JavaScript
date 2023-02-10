@@ -1,0 +1,9 @@
+npm init -- для установки npm пакет
+npm init --yes -- для быстрого установки
+npm repo (название пакетов) -- получим доступ к git hub
+npm view (название пакетов) -- для обзора пакета
+npm home (название пакетов) -- отправить нас на главную страницу (home)
+npm s "(чего хотим искать) bootstrap grid" -- поисковик
+
+Tailwind
+"start": "npx tailwindcss -i ./input.css -o ./css/style.css --watch" - для начало работы

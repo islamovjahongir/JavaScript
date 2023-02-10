@@ -1,0 +1,67 @@
+body {
+    background-color: #000;
+}
+
+.content__circle {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+
+    animation-name: white-circle;
+    animation-duration: 2s;
+    /* Продолжительность анимации */
+    animation-timing-function: linear;
+    /* Указывает как должен начинаться анимация */
+    animation-iteration-count: infinite;
+    /* Указывает сколько раз будет проиграваться анимация */
+    animation-direction: alternate;
+    /* Указивает на направление анимации */
+    animation-delay: 0s;
+    /* Указывает после сколько промежутки времени анимация должен начинаться */
+    animation-fill-mode: forwards;
+    /* сообщает браузеру, нужно ли применять стили 
+    ключевых кадров до или после проигрывания анимации. */
+
+    /* animaion -- совместить все вверхние анимации */
+}
+
+.content:hover .content__circle {
+    animation-play-state: paused;
+    /* При наведение анимация остоновиться */
+}
+
+@keyframes white-circle {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        border-radius: 0;
+    }
+
+    100% {
+        left: 500px;
+    }
+}
+
+/* transition */
+.h2 {
+    color: white;
+    transform: translate(50px, 50px);
+}
+
+.h2:hover {
+    cursor: pointer;
+    color: blue;
+
+    transition-duration: 2s;
+    /* Продолжительность анимации */
+    transition-delay: 0s;
+    /* После каких секундах должен начинаться анимация */
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    transition-property: all;
+}
